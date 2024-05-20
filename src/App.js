@@ -22,7 +22,7 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Login setIsAuthenticated={setIsAuthenticated} />} />
+        <Route path="/Test" element={<Login setIsAuthenticated={setIsAuthenticated} />} />
         {isAuthenticated ? (
           <Route element={<AuthenticatedRoutes />}>
             <Route path="/products" element={<ProductsPage />} />
@@ -33,7 +33,7 @@ const App = () => {
             <Route path="/cart" element={<CartPage />} />
           </Route>
         ) : (
-          <Route path="*" element={<Navigate to="/" />} />
+          <Route path="*" element={<Navigate to="/Test" />} />
         )}
       </Routes>
     </Router>

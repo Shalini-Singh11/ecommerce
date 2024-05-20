@@ -9,7 +9,7 @@ function Navbar() {
 
     const handleLogout = () => {
         localStorage.removeItem('token');
-        navigate('/');
+        navigate('/Test');
     };
 
     return (
