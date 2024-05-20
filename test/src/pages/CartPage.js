@@ -19,6 +19,7 @@ const CartPage = () => {
   };
 
   return (
+    <>
     <div className="container mt-5">
       <div className="d-flex justify-content-between align-items-center">
         <div>
@@ -53,6 +54,7 @@ const CartPage = () => {
         ))}
       </div>
     </div>
+    </>
   );
 };
 
